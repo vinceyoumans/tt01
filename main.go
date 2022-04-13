@@ -38,9 +38,7 @@ func Step002(str []byte) []book {
 	}
 
 	for i, B := range TBOOK {
-		fmt.Println(i, B.Word)
 
-		fmt.Println(isPalendrome(B.Word))
 		if isPalendrome(B.Word) {
 			TBOOK[i].isPal = true
 		} else {
